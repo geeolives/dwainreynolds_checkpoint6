@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,900);
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-h1 {
+main h1 {
   color: #ff2400;
   font: 3em "Playfair Display", serif;
   font-weight: 600; }
 
-h2 {
+aside h2 {
   color: #0946b2;
   font: 2.25em "Libre Franklin", sans-serif; }
 
@@ -18,15 +18,112 @@ h3 {
 p {
   font: 1em "Nunito", sans-serif; }
 
-nav ul {
+.navigation {
+  list-style: none;
   margin: 0;
-  padding: 0;
-  list-style: none; }
+  background: #ff2400;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center; }
 
-nav li {
-  display: inline-block; }
-
-nav a {
+.navigation a {
+  text-decoration: none;
   display: block;
-  padding: 6px 12px;
-  text-decoration: none; }
+  padding: 1em;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2em; }
+
+.navigation a:hover {
+  background: #003ca8; }
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around; } }
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0; }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .navigation li:last-of-type a {
+    border-bottom: none; } }
+
+.donate-wrapper {
+  background-color: #0040b2;
+  color: #ffffff;
+  padding: 10px;
+  width: 35%; }
+
+.donate-wrapper h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 1.5em; }
+
+.donate-box-wrapper {
+  padding-bottom: 10px; }
+
+.donate-box {
+  background-color: #196cff;
+  display: inline-block;
+  color: #ffffff;
+  padding: 12px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0 10px;
+  position: relative; }
+
+.donate-box:hover {
+  background-color: #4fcc6b;
+  color: #ffffff;
+  cursor: pointer; }
+
+.btn-green {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #4fcc6b;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  display: inline-block;
+  border-radius: 3px;
+  -webkit-transition: 320ms;
+  transition: 320ms;
+  font-weight: 900;
+  cursor: pointer;
+  border: solid 1px #82c110;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #ffffff; }
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active {
+  background-color: #196cff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+  color: #ffffff;
+  outline: none;
+  border: 0; }
+
+.donate-wrapper .btn-green {
+  margin-bottom: 10px;
+  width: 16%;
+  font-size: 14px;
+  align-content: center; }
