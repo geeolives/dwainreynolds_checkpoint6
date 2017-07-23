@@ -58,6 +58,10 @@ p {
   .navigation li:last-of-type a {
     border-bottom: none; } }
 
+.container {
+  display: flex;
+  flex-direction: row; }
+
 .donate-wrapper {
   background-color: #0040b2;
   color: #ffffff;
