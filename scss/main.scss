@@ -34,6 +34,10 @@ p {
     font: 1em $nunito;
 }
 
+.header {
+    text-align: center;
+}
+
 //Sass Navigation Props
 .navigation {
     list-style: none;
@@ -61,6 +65,14 @@ p {
     background: #003ca8;
 }
 
+.active {
+    background-color: $secondary-color;
+}
+
+.active-two {
+    background-color: #4fcc6b;
+}
+
 @media all and (max-width: 800px) {
     .navigation {
         justify-content: space-around;
@@ -86,11 +98,6 @@ p {
 }
 
 // Donation Form CSS
-.container {
-  display: flex;
-	flex-direction: row;
-}
-
 .donate-wrapper {
     background-color: #0040b2;
     color: #ffffff;
@@ -167,4 +174,46 @@ p {
     width: 16%;
     font-size: 14px;
     align-content: center;
+}
+
+footer {
+    background: $secondary-color;
+    color: white;
+    grid-area: footer;
+    text-align: center;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+// Social Media Icons
+.sticky-container {
+    padding: 1px;
+    margin: 1px;
+    position: fixed;
+    right: -130px;
+    top: 230px;
+    width: 210px;
+    z-index: 1100;
+}
+
+.sticky li {
+    list-style-type: none;
+
+    height: 43px;
+    padding: 1px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.sticky li:hover {
+    margin-left: -5px;
+}
+
+.sticky li img {
+    float: left;
+    margin: 5px 4px;
+    margin-right: 5px;
 }

@@ -18,6 +18,9 @@ h3 {
 p {
   font: 1em "Nunito", sans-serif; }
 
+.header {
+  text-align: center; }
+
 .navigation {
   list-style: none;
   margin: 0;
@@ -41,6 +44,12 @@ p {
 .navigation a:hover {
   background: #003ca8; }
 
+.active {
+  background-color: #0946b2; }
+
+.active-two {
+  background-color: #4fcc6b; }
+
 @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around; } }
@@ -57,10 +66,6 @@ p {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   .navigation li:last-of-type a {
     border-bottom: none; } }
-
-.container {
-  display: flex;
-  flex-direction: row; }
 
 .donate-wrapper {
   background-color: #0040b2;
@@ -131,3 +136,38 @@ p {
   width: 16%;
   font-size: 14px;
   align-content: center; }
+
+footer {
+  background: #0946b2;
+  color: white;
+  grid-area: footer;
+  text-align: center;
+  margin-top: 50px;
+  padding: 5px; }
+
+.sticky-container {
+  padding: 1px;
+  margin: 1px;
+  position: fixed;
+  right: -130px;
+  top: 230px;
+  width: 210px;
+  z-index: 1100; }
+
+.sticky li {
+  list-style-type: none;
+  height: 43px;
+  padding: 1px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer; }
+
+.sticky li:hover {
+  margin-left: -5px; }
+
+.sticky li img {
+  float: left;
+  margin: 5px 4px;
+  margin-right: 5px; }
