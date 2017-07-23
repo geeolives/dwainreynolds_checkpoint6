@@ -1,0 +1,52 @@
+//Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,900);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+//Font Variables
+$playfair-display: 'Playfair Display', serif;
+$libre-franklin: 'Libre Franklin', sans-serif;
+$nunito: 'Nunito', sans-serif;
+
+//Color Variables
+$primary-color: #ff2400;
+$secondary-color: #0946b2;
+$tertiary-color: #328345;
+
+h1 {
+    color: $primary-color;
+    font: 3em $playfair-display;
+    font-weight: 600;
+}
+
+h2 {
+    color: $secondary-color;
+    font: 2.25em $libre-franklin;
+}
+
+h3 {
+    color: $secondary-color;
+    font: 1.5em $libre-franklin;
+		font-style: italic;
+}
+
+p {
+    font: 1em $nunito;
+}
+
+//Sass Navigation Props
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li { display: inline-block; }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,900);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+h1 {
+  color: #ff2400;
+  font: 3em "Playfair Display", serif;
+  font-weight: 600; }
+
+h2 {
+  color: #0946b2;
+  font: 2.25em "Libre Franklin", sans-serif; }
+
+h3 {
+  color: #0946b2;
+  font: 1.5em "Libre Franklin", sans-serif;
+  font-style: italic; }
+
+p {
+  font: 1em "Nunito", sans-serif; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
