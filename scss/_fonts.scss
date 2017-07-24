@@ -13,7 +13,8 @@ $primary-color: #ff2400;
 $secondary-color: #0946b2;
 $tertiary-color: #328345;
 
-aside h1 {
+aside h1,
+.header1 {
     color: $primary-color;
     font: 3em $playfair-display;
     font-weight: 600;

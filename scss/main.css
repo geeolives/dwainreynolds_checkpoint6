@@ -1,7 +1,311 @@
+/* Grid Layout */
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,900);
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-aside h1 {
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 50%) 3fr;
+  grid-gap: 20px;
+  grid-template-areas: "header header" "sidebar content" "footer footer"; }
+
+header {
+  grid-area: header;
+  text-align: center;
+  margin-bottom: 0; }
+
+main {
+  grid-area: content;
+  padding-top: 100px;
+  margin-right: 50px;
+  padding-bottom: 100px; }
+
+aside {
+  grid-area: sidebar;
+  padding: 20px; }
+
+footer {
+  background: #0040b2;
+  color: white;
+  grid-area: footer;
+  text-align: center;
+  margin-top: 30px; }
+
+/* MANY ATTEMPTS OT MAKE MY WEBSITE RESPONSIVE -- ALL FAILED
+Landscape phones and down
+@media (max-width: 480px) {
+    main {
+        float: left;
+        width: 100%;
+    }
+
+    aside {
+        float: left;
+        width: 50%;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 10;
+        justify-content: center;
+    }
+}
+
+/* Landscape phone to portrait tablet
+@media (max-width: 767px) {
+    main {
+        float: left;
+        width: 75%;
+    }
+
+    aside {
+        float: left;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 10;
+        justify-content: center;
+    }
+}
+
+/* Portrait tablet to landscape and desktop
+@media (min-width: 768px) and (max-width: 979px) {
+    main {
+        float: left;
+        width: 75%;
+    }
+
+    aside {
+        float: left;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 10;
+        justify-content: center;
+    }
+}
+
+/* Large desktop
+@media (min-width: 1200px) {
+    main {
+        float: left;
+        width: 75%;
+    }
+
+    aside {
+        float: left;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 10;
+        justify-content: center;
+    }
+}
+
+/* Small devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    main {
+        float: left;
+        width: 75%;
+    }
+
+    aside {
+        float: left;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 10;
+        justify-content: center;
+    }
+}
+
+/* Medium devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    main {
+        float: left;
+        width: 75%;
+    }
+
+    aside {
+        float: left;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 10;
+        justify-content: center;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    main {
+        float: left;
+        width: 75%;
+    }
+
+    aside {
+        float: left;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 10;
+        justify-content: center;
+    }
+} */
+/* ----------- iPhone 4 and 4S -----------
+
+/* Portrait and Landscape
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  main {
+    width: 100%;
+    margin-left: 20px; }
+  main h2 {
+    font-size: 100%; }
+  aside {
+    width: 100%; }
+  footer {
+    width: 100%; } }
+
+/* Portrait
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6 -----------
+
+/* Portrait and Landscape
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6+ -----------
+
+/* Portrait and Landscape
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+} */
+aside h1,
+.header1 {
   color: #ff2400;
   font: 3em "Playfair Display", serif;
   font-weight: 600; }
@@ -79,9 +383,7 @@ p {
 .donate-wrapper {
   background-color: #0040b2;
   color: #ffffff;
-  padding: 10px;
-  max-width: 95%;
-  margin: 0 auto; }
+  padding: 10px; }
 
 .donate-wrapper h1 {
   font-family: 'Libre Franklin', sans-serif;
@@ -184,40 +486,3 @@ p {
   float: left;
   margin: 5px 4px;
   margin-right: 5px; }
-
-/* Grid Layout */
-html {
-  box-sizing: border-box; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
-.grid {
-  display: grid;
-  grid-template-columns: minmax(300px, 50%) 3fr;
-  grid-gap: 40px;
-  grid-template-areas: "header header" "sidebar content" "footer footer"; }
-
-header {
-  grid-area: header;
-  text-align: center;
-  margin-bottom: 0; }
-
-main {
-  grid-area: content;
-  padding-top: 100px;
-  margin-right: 50px;
-  padding-bottom: 100px; }
-
-aside {
-  grid-area: sidebar;
-  padding: 20px; }
-
-footer {
-  background: #0040b2;
-  color: white;
-  grid-area: footer;
-  text-align: center;
-  margin-top: 30px; }
