@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=500, initial-scale=1">
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="scss/main.css">
+    <link rel="stylesheet" type="text/css" href="scss/about.css">
 
 		<!--Replacement for Bodoni font-->
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
@@ -34,7 +34,10 @@
 		</ul>
 	</nav>
 
-	<main>
+	<div class="container">
+		<div class="row">
+
+	<aside class="col-7">
 	<h1 class="header1">About</h1>
 	<h2>Meet Dwain</h2>
 	<p>Dwain is a lifelong Michigander. He studied Secondary Education and Social Studies teaching at Grand Valley State University. Dwain has spent over ten years in the education realm. Currently, he is a High School Social Studies teacher in inner-city Grand Rapids. Dwain is a proponent for creating a system in which everyone has the ability to make the best of themselves; where everyone starts out on an equal playing field. “No longer should race, gender, disability, sexual orientation, age or wealth play a part in how much some can make of oneself. It should only be hard work and dedication that defines how far someone can go and what they can become.” He is dedicated to ensuring every child has equal access to an excellent education and demands social equality, democratic rights, and protections for all Michiganders.</p>
@@ -43,16 +46,52 @@
 
 	<p>I, like many others, am overworked and underpaid. I answered calls from friends and family on the day of Trump's elections who were worried about themselves and their families. My ninety-year-old grandmother called me worried about her social security. A friend called me worried about her marriage to her new wife. Another friend called me worried about her daughter's safety as she is transitioning and another because she is Jewish. I was concerned for them and still am. It was then that I decided to run for Governor. To show people that there are still people who support everyone and who will speak out in their defense. This campaign has become more than just a run for governor, but a call to bring people together for the greater good.  Minor differences between people, groups, and organizations pale in comparison to the rich and corporations expelling our democracy for their personal gain. They have enjoyed the freedoms of this country unchecked, through our hard labor, for far too long. Let us stand together. Tell your family, your friends, your co-workers and neighbors that we all deserve better than hurtful Republican ideology and responsive band-aids from Democrats.</p>
 
-	<p><img src="img/samplefamily.jpg" alt="Sample Family Pic" width="30%"></p>
+	<p><img src="img/samplefamily.jpg" alt="Sample Family Pic" width="75%" class="familypic"></p>
 
 	<button>
 		<p>Press Kit</p>
 	</button>
-</main>
-
-<aside>
-
 </aside>
+
+<main class="col-5">
+<p><img src="img/dwain.jpg" alt="Dwain Reynolds" width="100%"></p>
+
+<button>
+	<p>Donate Today</p>
+</button>
+
+<form action="#" class="solid">
+
+  <div>
+		<h2>Join us!</h2>
+    <h3>Subscribe to our mailing list</h3>
+    <label class="desc" id="title1" for="Field1">Full Name</label>
+    <div>
+      <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+    </div>
+  </div>
+
+	<div>
+	<label class="desc" id="title2" for="Field2">Email</label>
+	<div>
+		<input id="Field2" name="Field2" type="text" class="field text fn" value="" size="8" tabindex="1">
+	</div>
+</div>
+
+	<div>
+		<label class="desc" id="title3" for="Field3">Zipcode</label>
+	<div>
+		<input id="Field3" name="Field3" type="text" class="field text fn" value="" size="8" tabindex="1">
+	</div>
+</div>
+
+  <div>
+		<div>
+  		<input id="saveForm" name="saveForm" type="submit" value="Subscribe">
+    </div>
+	</div>
+</form>
+</main>
 
 	<aside class="sticky-container">
 			<ul class="sticky">
@@ -62,6 +101,9 @@
 				<li><a href="https://www.youtube.com"><img src="img/youtubelogo.svg" alt="YouTube" width="32" height="32" class="youtube" /></a></li>
 			</ul>
 	</aside>
+
+</div>
+</div>
 
 	<footer class="footer">
 		<p id="footer"><b>Paid for by Dwain Reynolds for Michigan | </b> © 2016 Dwain Reynolds</p>
