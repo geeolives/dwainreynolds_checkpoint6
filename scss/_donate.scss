@@ -1,0 +1,79 @@
+// Donation Form CSS
+.donate-wrapper {
+    background-color: #0040b2;
+    color: #ffffff;
+    padding: 10px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.donate-wrapper h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.donate-box-wrapper {
+    padding-bottom: 10px;
+}
+
+.donate-box {
+    background-color: #196cff;
+    display: inline-block;
+    color: #ffffff;
+    padding: 12px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.donate-box:hover {
+    background-color: #4fcc6b;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btn-green {
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #4fcc6b;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-transition: 320ms;
+    transition: 320ms;
+    font-weight: 900;
+    cursor: pointer;
+    border: solid 1px #82c110;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active {
+    background-color: #196cff;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    color: #ffffff;
+    outline: none;
+    border: 0;
+}
+
+.donate-wrapper .btn-green {
+    margin-bottom: 10px;
+    width: 20%;
+    font-size: 14px;
+    align-content: center;
+}

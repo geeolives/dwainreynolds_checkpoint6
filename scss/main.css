@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,900);
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-main h1 {
+aside h1 {
   color: #ff2400;
   font: 3em "Playfair Display", serif;
   font-weight: 600; }
 
-aside h2 {
+h2 {
   color: #0946b2;
   font: 2.25em "Libre Franklin", sans-serif; }
 
@@ -17,9 +17,6 @@ h3 {
 
 p {
   font: 1em "Nunito", sans-serif; }
-
-.header {
-  text-align: center; }
 
 .navigation {
   list-style: none;
@@ -47,10 +44,22 @@ p {
 .active {
   background-color: #0946b2; }
 
+.active-about {
+  background-color: #0946b2; }
+
+.active-agenda {
+  background-color: #0946b2; }
+
+.active-blog {
+  background-color: #0946b2; }
+
+.active-contact {
+  background-color: #0946b2; }
+
 .active-two {
   background-color: #4fcc6b; }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
   .navigation {
     justify-content: space-around; } }
 
@@ -71,7 +80,8 @@ p {
   background-color: #0040b2;
   color: #ffffff;
   padding: 10px;
-  width: 35%; }
+  max-width: 95%;
+  margin: 0 auto; }
 
 .donate-wrapper h1 {
   font-family: 'Libre Franklin', sans-serif;
@@ -133,18 +143,21 @@ p {
 
 .donate-wrapper .btn-green {
   margin-bottom: 10px;
-  width: 16%;
+  width: 20%;
   font-size: 14px;
   align-content: center; }
 
-footer {
-  background: #0946b2;
-  color: white;
-  grid-area: footer;
-  text-align: center;
-  margin-top: 50px;
-  padding: 5px; }
-
+/* footer {
+    background: $secondary-color;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 10;
+} */
 .sticky-container {
   padding: 1px;
   margin: 1px;
@@ -171,3 +184,40 @@ footer {
   float: left;
   margin: 5px 4px;
   margin-right: 5px; }
+
+/* Grid Layout */
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 50%) 3fr;
+  grid-gap: 40px;
+  grid-template-areas: "header header" "sidebar content" "footer footer"; }
+
+header {
+  grid-area: header;
+  text-align: center;
+  margin-bottom: 0; }
+
+main {
+  grid-area: content;
+  padding-top: 100px;
+  margin-right: 50px;
+  padding-bottom: 100px; }
+
+aside {
+  grid-area: sidebar;
+  padding: 20px; }
+
+footer {
+  background: #0040b2;
+  color: white;
+  grid-area: footer;
+  text-align: center;
+  margin-top: 30px; }

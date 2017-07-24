@@ -1,0 +1,44 @@
+
+/* Grid Layout */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(300px, 50%) 3fr;
+    grid-gap: 40px;
+    grid-template-areas: "header header" "sidebar content" "footer footer";
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main {
+    grid-area: content;
+    padding-top: 100px;
+    margin-right: 50px;
+    padding-bottom: 100px;
+}
+
+aside {
+    grid-area: sidebar;
+    padding: 20px;
+}
+
+footer {
+    background: #0040b2;
+    color: white;
+    grid-area: footer;
+    text-align: center;
+    margin-top: 30px;
+}
