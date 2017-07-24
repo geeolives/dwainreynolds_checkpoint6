@@ -120,15 +120,6 @@ footer {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-form header {
-  margin: 0 0 20px 0; }
-
-form header div {
-  font-size: 90%; }
-
-form header h2 {
-  margin: 0 0 5px 0; }
-
 form > div {
   clear: both;
   overflow: hidden;
@@ -158,22 +149,23 @@ fieldset {
 
 input[type=text],
 input[type=email],
-input[type=url],
-input[type=password] {
+input[type=zipcode],
+textarea {
   width: 100%;
-  border-top: 1px solid #cccccc;
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee; }
+  border-top: 1px solid #0946b2;
+  border-left: 1px solid #0946b2;
+  border-right: 1px solid #0946b2;
+  border-bottom: 1px solid #0946b2; }
 
 input[type=text],
-input[type=email] {
-  width: 50%; }
-
+input[type=email],
+input[type=zipcode],
 input[type=text]:focus,
-input[type=email]:focus {
+input[type=email]:focus,
+input[type=zipcode]:focus,
+textarea:focus {
   outline: 0;
-  border-color: #4697e4; }
+  border-color: #0946b2; }
 
 @media (max-width: 600px) {
   form > div {
@@ -189,8 +181,6 @@ input[type=email]:focus {
     float: none; }
   input[type=text],
   input[type=email],
-  input[type=url],
-  input[type=password],
   textarea,
   select {
     width: 100%; } }
@@ -202,14 +192,19 @@ input[type=email]:focus {
 
 form.solid {
   border-style: solid;
+  border-color: #328345;
   padding-left: 10px;
   padding-right: 10px;
-  border-color: #328345; }
+  margin-top: 420px; }
+
+label,
+input,
+button {
+  font: 1em "Nunito", sans-serif; }
 
 .container {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: auto; }
   @media only screen and (min-width: 33.75em) {
     .container {
       width: 80%; } }
