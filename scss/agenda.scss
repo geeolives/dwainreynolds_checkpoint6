@@ -1,0 +1,38 @@
+@import "fonts";
+@import "navigation";
+@import "donate";
+@import "socialmedia";
+@import "footer";
+@import "gridagenda";
+
+header {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h1 {
+    font: 3em $playfair-display;
+    color: $primary-color;
+}
+
+h1.donate {
+    color: white;
+}
+
+li {
+    font: 1em $nunito;
+}
+
+.donate-wrapper {
+    margin-top: 700px;
+    width: 130%;
+    margin-right: 20px;
+}
+
+.donate-box {
+    margin: 5px;
+}
+
+.btn-green {
+    margin: 0;
+}
