@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,900);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+aside h1,
+.header1 {
+  color: #ff2400;
+  font: 3em "Playfair Display", serif;
+  font-weight: 600; }
+
+h2 {
+  color: #0946b2;
+  font: 2.25em "Libre Franklin", sans-serif; }
+
+h3 {
+  color: #0946b2;
+  font: 1.5em "Libre Franklin", sans-serif;
+  font-style: italic; }
+
+p {
+  font: 1em "Nunito", sans-serif; }
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: #ff2400;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center; }
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2em; }
+
+.navigation a:hover {
+  background: #003ca8; }
+
+.active {
+  background-color: #0946b2; }
+
+.active-about {
+  background-color: #0946b2; }
+
+.active-agenda {
+  background-color: #0946b2; }
+
+.active-blog {
+  background-color: #0946b2; }
+
+.active-contact {
+  background-color: #0946b2; }
+
+.active-two {
+  background-color: #4fcc6b; }
+
+@media all and (max-width: 1000px) {
+  .navigation {
+    justify-content: space-around; } }
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0; }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .navigation li:last-of-type a {
+    border-bottom: none; } }
+
+.sticky-container {
+  padding: 1px;
+  margin: 1px;
+  position: fixed;
+  right: -130px;
+  top: 230px;
+  width: 210px;
+  z-index: 1100; }
+
+.sticky li {
+  list-style-type: none;
+  height: 43px;
+  padding: 1px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer; }
+
+.sticky li:hover {
+  margin-left: -5px; }
+
+.sticky li img {
+  float: left;
+  margin: 5px 4px;
+  margin-right: 5px; }
+
+footer {
+  background: #0946b2;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  padding: 5px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 10; }
+
+header {
+  text-align: center;
+  margin-bottom: 0; }

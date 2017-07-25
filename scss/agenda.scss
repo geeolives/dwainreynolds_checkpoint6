@@ -19,12 +19,35 @@ h1.donate {
     color: white;
 }
 
-li {
+div.learn {
+    background-color: $secondary-color;
+    padding: 10px;
+    color: white;
+    font-family: $libre-franklin;
+    font-size: 2.25em;
+    width: 50%;
+    margin-bottom: 3px;
+    margin-top: 30px;
+}
+
+div.vision {
+    background-color: $primary-color;
+    padding: 10px;
+    color: white;
+    font-family: $libre-franklin;
+    font-size: 2.25em;
+    width: 50%;
+		margin-bottom: 30px;
+}
+
+section li {
     font: 1em $nunito;
+    margin: 20px;
+    margin-left: 40px;
 }
 
 .donate-wrapper {
-    margin-top: 700px;
+    margin-top: 10px;
     width: 130%;
     margin-right: 20px;
 }
@@ -35,4 +58,39 @@ li {
 
 .btn-green {
     margin: 0;
+}
+
+button {
+    color: white;
+    font: 1em $nunito;
+    background-color: $secondary-color;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    -webkit-transition: 320ms;
+    transition: 320ms;
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: #4fcc6b;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    color: #ffffff;
+    outline: none;
+    border: 0;
+}
+
+.agenda-issues {
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
