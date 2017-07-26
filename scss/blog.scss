@@ -4,6 +4,7 @@
 @import "socialmedia";
 @import "footer";
 
+/* Basic Styling */
 header {
     text-align: center;
     margin-bottom: 0;
@@ -23,6 +24,25 @@ h4 {
     text-align: center;
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.cf::before,
+.cf::after {
+    content: "";
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}
+
+/* Blog Post */
 .card1 {
     width: 320px;
     text-align: left;
@@ -59,6 +79,7 @@ img {
 }
 */
 
+/* Button Style */
 button {
     color: white;
     font: 1em $nunito;
@@ -90,6 +111,12 @@ button:active {
     border: 0;
 }
 
+button.recent {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Newsletter form */
 .SignUp {
     background-color: white;
     float: right;
@@ -134,42 +161,17 @@ form p {
     font-size: 1.2em;
 }
 
-/* --------------------------------------------------------------
-1.0 - BASE SITE STYLES
--------------------------------------------------------------- */
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-.cf::before,
-.cf::after {
-    content: "";
-    display: table;
-}
-
-.cf::after {
-    clear: both;
-}
-
-/* --------------------------------------------------------------
-2.0 - SEARCH FORM
--------------------------------------------------------------- */
-
+/* Search Form */
 .searchform {
     background: rgba(244, 244, 244, 0.79);
     border: 1px solid #d3d3d3;
     padding: 2px 5px;
     position: absolute;
-    width: 339px;
+    width: 310px;
     box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
     -moz-box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
     -webkit-box-shadow: 0 4px 9px rgba(0, 0, 0, 0.37);
-		margin-top: 80px;
+    margin-top: 80px;
 }
 
 .searchform input,
@@ -208,28 +210,30 @@ form p {
 }
 
 .searchform button {
-    background: rgb(52, 173, 236);
-    background: -moz-linear-gradient(top, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(52, 173, 236, 1)), color-stop(100%, rgba(38, 145, 220, 1)));
-    background: -webkit-linear-gradient(top, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
-    background: -o-linear-gradient(top, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
-    background: linear-gradient(to bottom, rgba(52, 173, 236, 1) 0%, rgba(38, 145, 220, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#34adec', endColorstr='#2691dc', GradientType=0);
-    border: none;
-    color: #ffffff;
+    color: white;
+    font: 1em $nunito;
+    background-color: $secondary-color;
+    border-radius: 3px;
+    padding: 6px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    -webkit-transition: 320ms;
+    transition: 320ms;
     cursor: pointer;
-    font: 13px;
-    padding: 10px;
-    width: 106px;
-    box-shadow: 0 0 2px #2692dd inset;
-    -moz-box-shadow: 0 0 2px #2692dd inset;
-    -webkit-box-shadow: 0 0 2px #2692dd inset;
-    border-radius: 9px;
-    -moz-border-radius: 9px;
-    -webkit-border-radius: 9px;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+
 }
 
 .searchform button:hover {
-    opacity: 0.9;
+    background-color: #4fcc6b;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    color: #ffffff;
+    outline: none;
+    border: 0;
 }
