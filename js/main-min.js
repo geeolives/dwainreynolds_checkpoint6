@@ -1,0 +1,1 @@
+function frameLooper(){array.length>0?document.getElementById("text").innerHTML+=array.shift():clearTimeout(timer),loopTimer=setTimeout("frameLooper()",70)}var string="Welcome!",array=string.split(""),timer;frameLooper();
