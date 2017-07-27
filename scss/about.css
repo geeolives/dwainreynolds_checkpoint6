@@ -1,31 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,900);
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-
 aside h1,
 .header1 {
-    color: #ff2400;
-    font: 3em "Playfair Display", serif;
-    font-weight: 600;
-}
+  color: #ff2400;
+  font: 3em "Playfair Display", serif;
+  font-weight: 600; }
 
 h2 {
-    color: #0946b2;
-    font: 2.25em "Libre Franklin", sans-serif;
-}
+  color: #0946b2;
+  font: 2.25em "Libre Franklin", sans-serif; }
 
 h3 {
-    color: #0946b2;
-    font: 1.5em "Libre Franklin", sans-serif;
-    font-style: italic;
-}
+  color: #0946b2;
+  font: 1.5em "Libre Franklin", sans-serif;
+  font-style: italic; }
 
 /* SCSS Function as per rubric requirements */
 p {
-    font-size: 1rem;
-    font-family: "Nunito", sans-serif;
-    line-height: 1.6em;
-}
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6em; }
 
 .navigation {
   list-style: none;
@@ -90,12 +85,14 @@ footer {
   color: white;
   text-align: center;
   margin-top: 100px;
-  padding: 5px;
   position: absolute;
   right: 0;
   left: 0;
   bottom: 10;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+  flex: 0 0 auto;
+  /* second use of flexbox - flex grow, flex shrink, flex basis */
+  padding: 1em; }
 
 .sticky-container {
   padding: 1px;
@@ -516,10 +513,12 @@ main {
 aside {
   float: right; }
 
-img {
+.familypic,
+.dwain {
   opacity: 1; }
 
-img:hover {
+.familypic:hover,
+.dwain:hover {
   opacity: 0.5;
   transition: opacity 0.2s ease-out;
   -moz-transition: opacity 0.2s ease-out;

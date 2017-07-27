@@ -286,12 +286,14 @@ footer {
   color: white;
   text-align: center;
   margin-top: 100px;
-  padding: 5px;
   position: absolute;
   right: 0;
   left: 0;
   bottom: 10;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+  flex: 0 0 auto;
+  /* second use of flexbox - flex grow, flex shrink, flex basis */
+  padding: 1em; }
 
 /* Keyframes requirement as per rubric */
 .jello-horizontal {
@@ -360,5 +362,6 @@ h2 {
   margin-top: 0; }
 
 .donate-wrapper {
+  display: inline-table;
   position: relative;
   width: 117%; }

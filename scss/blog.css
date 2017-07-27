@@ -214,12 +214,14 @@ footer {
   color: white;
   text-align: center;
   margin-top: 100px;
-  padding: 5px;
   position: absolute;
   right: 0;
   left: 0;
   bottom: 10;
-  font-family: "Nunito", sans-serif; }
+  font-family: "Nunito", sans-serif;
+  flex: 0 0 auto;
+  /* second use of flexbox - flex grow, flex shrink, flex basis */
+  padding: 1em; }
 
 .arrow {
   border: 3px solid #0946b2;
@@ -312,10 +314,12 @@ h4 {
   margin-bottom: 20px; }
 
 /* Transition animation requirement as per rubric */
-img {
+.bernie,
+.image {
   opacity: 1; }
 
-img:hover {
+.bernie:hover,
+.image:hover {
   opacity: 0.5;
   transition: opacity 0.2s ease-out;
   -moz-transition: opacity 0.2s ease-out;

@@ -121,11 +121,13 @@ aside {
     float: right;
 }
 
-img {
+.familypic,
+.dwain {
     opacity: 1;
 }
 
-img:hover {
+.familypic:hover,
+.dwain:hover {
     opacity: 0.5;
     transition: opacity 0.2s ease-out;
     -moz-transition: opacity 0.2s ease-out;

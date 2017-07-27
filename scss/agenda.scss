@@ -4,6 +4,7 @@
 @import "socialmedia";
 @import "footer";
 @import "gridagenda";
+@import "donateanimate";
 
 header {
     text-align: center;
@@ -101,11 +102,11 @@ button:active {
     float: left;
 }
 
-img {
+.bernie {
     opacity: 1;
 }
 
-img:hover {
+.bernie:hover {
     opacity: 0.5;
     transition: opacity 0.2s ease-out;
     -moz-transition: opacity 0.2s ease-out;
