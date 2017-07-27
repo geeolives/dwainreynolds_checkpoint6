@@ -232,6 +232,12 @@ h4 {
   size: 1.2em;
   text-align: center; }
 
+.read {
+  color: #328345; }
+
+.read:hover {
+  color: #0946b2; }
+
 *,
 *::after,
 *::before {

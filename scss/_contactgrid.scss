@@ -50,10 +50,6 @@ $breakpoint-large: 60em; // 960px
     width: $width;
 }
 
-.col-5 {
-    padding-top: 140px;
-}
-
 .col-1-sm { width: ($width / 12) - ($gutter * 11 / 12); }
 
 .col-2-sm { width: ($width / 6) - ($gutter * 10 / 12); }

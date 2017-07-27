@@ -223,9 +223,6 @@ footer {
 .col-12 {
   width: 96%; }
 
-.col-5 {
-  padding-top: 140px; }
-
 .col-1-sm {
   width: 4.3333333333%; }
 
@@ -297,11 +294,13 @@ h1 {
 h1.contribute {
   color: white; }
 
+header {
+  text-align: center; }
+
 /* Press Kit Button */
 button.presskit {
   background-color: #196cff;
   color: white;
-  margin-bottom: 68px;
   border-radius: 5px;
   padding: 5px;
   text-transform: uppercase;
@@ -314,7 +313,8 @@ button.presskit {
   border: solid 1px #82c110;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #ffffff; }
+  color: #ffffff;
+  margin-left: 160px; }
 
 button.presskit:hover,
 button.presskit:focus,
@@ -381,7 +381,7 @@ textarea {
   float: right;
   margin-top: 5px; }
 
-/* Location, Phone, Email Section */
+/* Location & Phone Section */
 .contact-list {
   list-style-type: none;
   margin-left: -30px;
@@ -393,7 +393,8 @@ textarea {
 
 .contact-text {
   font: 300 18px "Nunito", sans-serif;
-  letter-spacing: 1.9px; }
+  letter-spacing: 1.9px;
+  color: black; }
 
 .place {
   margin-left: 62px; }
@@ -443,3 +444,6 @@ textarea {
 @media screen and (max-width: 410px) {
   .send-button {
     width: 99%; } }
+
+#message {
+  margin-left: 10px; }

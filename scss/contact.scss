@@ -16,11 +16,14 @@ h1.contribute {
     color: white;
 }
 
+header {
+    text-align: center;
+}
+
 /* Press Kit Button */
 button.presskit {
     background-color: #196cff;
     color: white;
-    margin-bottom: 68px;
     border-radius: 5px;
     padding: 5px;
     text-transform: uppercase;
@@ -34,6 +37,7 @@ button.presskit {
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #ffffff;
+    margin-left: 160px;
 }
 
 button.presskit:hover,
@@ -111,7 +115,7 @@ textarea {
     margin-top: 5px;
 }
 
-/* Location, Phone, Email Section */
+/* Location & Phone Section */
 .contact-list {
     list-style-type: none;
     margin-left: -30px;
@@ -126,6 +130,7 @@ textarea {
 .contact-text {
     font: 300 18px $nunito;
     letter-spacing: 1.9px;
+    color: black;
 }
 
 .place {
@@ -143,7 +148,7 @@ textarea {
 }
 
 .contact-text a:hover {
-    color: #328345;
+    color: $tertiary-color;
     text-decoration: none;
 }
 
@@ -197,4 +202,8 @@ textarea {
     .send-button {
         width: 99%;
     }
+}
+
+#message {
+    margin-left: 10px;
 }
