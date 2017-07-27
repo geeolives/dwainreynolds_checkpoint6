@@ -22,22 +22,21 @@ header {
 
 /* Press Kit Button */
 button.presskit {
-    background-color: #196cff;
+    background-color: $secondary-color;
     color: white;
+    padding: 10px;
     border-radius: 5px;
-    padding: 5px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.06em;
     -webkit-transition: 320ms;
     transition: 320ms;
-    font-weight: 900;
+    font-size: 1.2em;
     cursor: pointer;
     border: solid 1px #82c110;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #ffffff;
-    margin-left: 160px;
 }
 
 button.presskit:hover,
@@ -55,56 +54,50 @@ button.presskit:active {
 }
 
 /* CONTACT FORM */
-#contact {
+form {
+    font-family: $nunito;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+input[type=text],
+select,
+textarea {
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.contact-wrapper {
-    padding-top: 20px;
-    position: relative;
-    max-width: 800px;
-}
-
-/* Begin Left Contact Page */
-.form-horizontal {
-    float: left;
-    max-width: 400px;
+    padding: 12px;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
     font-family: $nunito;
 }
 
-.form-control,
-textarea {
-    max-width: 400px;
-    background-color: #ffffff;
-    color: #000000;
-    letter-spacing: 1px;
-}
-
-.send-button {
-    color: white;
+input[type=submit] {
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0 10px;
+    padding: 10px;
     background-color: #4fcc6b;
-    margin-bottom: 68px;
-    border-radius: 5px;
-    padding: 5px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.06em;
+    display: inline-block;
+    border-radius: 3px;
     -webkit-transition: 320ms;
     transition: 320ms;
-    font-weight: 900;
     cursor: pointer;
     border: solid 1px #82c110;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     color: #ffffff;
-    float: right;
+    width: 100%;
+    font-size: 14px;
 }
 
-.send-button:hover,
-.send-button:focus,
-.send-button:active {
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=submit]:active {
     background-color: #196cff;
     -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -116,17 +109,9 @@ textarea {
     border: 0;
 }
 
-/* Begin Right Contact Page */
-.direct-contact-container {
-    max-width: 400px;
-    float: right;
-    margin-top: 5px;
-}
-
 /* Location & Phone Section */
 .contact-list {
     list-style-type: none;
-    padding-right: 20px;
 }
 
 .list-item {
@@ -159,62 +144,7 @@ textarea {
     text-decoration: none;
 }
 
-/* Begin Media Queries */
-@media screen and (max-width: 760px) {
-    #contact {
-        height: 1000px;
-    }
-
-    .direct-contact-container,
-    .form-horizontal {
-        float: none;
-        margin: 10px auto;
-    }
-
-    .direct-contact-container {
-        margin-top: 60px;
-        max-width: 300px;
-    }
-}
-
-@media screen and (max-width: 569px) {
-    #contact {
-        height: 1200px;
-    }
-
-    .direct-contact-container,
-    .form-wrapper {
-        float: none;
-        margin: 0 auto;
-    }
-
-    .form-control,
-    textarea {
-        max-width: 340px;
-        margin: 0 auto;
-    }
-
-    .name,
-    textarea {
-        width: 280px;
-    }
-
-    .direct-contact-container {
-        margin-top: 60px;
-        max-width: 280px;
-    }
-}
-
-@media screen and (max-width: 410px) {
-    .send-button {
-        width: 99%;
-    }
-}
-
-#message {
-    margin-left: 10px;
-}
-
 .donate-wrapper {
-    width: 120%;
+    position: relative;
+    max-width: 420px;
 }

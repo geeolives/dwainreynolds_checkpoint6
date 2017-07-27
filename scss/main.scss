@@ -1,7 +1,7 @@
-@import "grid";
 @import "fonts";
 @import "navigation";
 @import "donate";
+@import "grid";
 @import "socialmedia";
 @import "footer";
 
@@ -14,6 +14,6 @@ h2 {
 }
 
 .donate-wrapper {
-    width: 117%;
     position: relative;
+    width: 117%;
 }

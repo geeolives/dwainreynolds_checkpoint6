@@ -44,70 +44,44 @@
 				<h2>Thank you so much for reaching out!</h2>
 				<p>We want to hear from you. Please message us here. Campaign staff monitors this email in-box and passes on your feedback to Dwain and the campaign team. While we may not be able to answer each of your emails individually, we value your input.</p>
 
-				<section id="contact">
+				<form>
+					<label for="fname">Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-					<div class="contact-wrapper">
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" placeholder="youremail@example.com">
 
-						<!--CONTACT PAGE LEFT-->
+					<label for="subject">Message</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-						<form class="form-horizontal" role="form" method="post">
+					<input type="submit" value="Submit" class="button">
+				</form>
+			</main>
 
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
-								</div>
-							</div>
+				<aside class="col-12">
 
-							<div class="form-group">
-								<div class="col-sm-12">
-									<input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
-								</div>
-							</div>
+					<h2>Or contact us directly:</h2>
+					<ul class="contact-list">
+						<li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a href="https://goo.gl/maps/XTGE6rMVW1H2" target="_blank">MIDDLEVILLE | MI</a></span></i></li>
 
-							<textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" id="message"></textarea>
+						<li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-616-805-9609" title="Give me a call">1-616-805-9609</a></span></i></li>
+					</ul>
 
-							<br>
-							<button class="send-button" type="submit" value="SEND">
-								<i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-							</button>
-						</form>
+						<h3>To download our Press Kit, click here:</h3>
+						<button type="submit" class="presskit">Press Kit</button>
 
-						<!--CONTACT PAGE RIGHT-->
-
-						<div class="direct-contact-container">
-
-							<ul class="contact-list">
-								<li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a href="https://goo.gl/maps/XTGE6rMVW1H2">MIDDLEVILLE | MI</a></span></i></li>
-
-								<li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-616-805-9609" title="Give me a call">1-616-805-9609</a></span></i></li>
-							</ul>
-
-							<hr>
-
-							<h3>Download our Press Kit here:</h3>
-							<button type="submit" class="presskit">Press Kit</button>
-
-							<h3 class="donate">Help us out by making a donation today!</h3>
-							<div class="donate-wrapper">
-								<h1 class="contribute">Contribute Today</h1>
-								<div class="donate-box-wrapper"></div>
-								<div class="donate-box">$10</div>
-								<div class="donate-box">$25</div>
-								<div class="donate-box">$50</div>
-								<div class="donate-box">$100</div>
-								<div type="submit" class="btn btn-green">Donate</div>
-							</div>
-
+						<h2>Help us out by making a donation today!</h2>
+						<div class="donate-wrapper">
+							<h1 class="contribute">Contribute Today</h1>
+							<div class="donate-box-wrapper"></div>
+							<div class="donate-box">$10</div>
+							<div class="donate-box">$25</div>
+							<div class="donate-box">$50</div>
+							<div class="donate-box">$100</div>
+							<div type="submit" class="btn btn-green">Donate</div>
 						</div>
-					</div>
-
-				</section>
-
-
-</main>
-
-</div>
-</div>
+					</aside>
+				</div>
 
 	<aside class="sticky-container">
 			<ul class="sticky">
@@ -125,5 +99,6 @@
 	<script src="https://use.fontawesome.com/a1496b96d0.js"></script>
 	<script src="js/main.js"></script>
 
+</div>
 </body>
 </html>

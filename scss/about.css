@@ -401,3 +401,9 @@ button.donate:active {
 
 .dwain {
   margin-top: 205px; }
+
+main {
+  float: left; }
+
+aside {
+  float: right; }
