@@ -4,6 +4,7 @@
 @import "socialmedia";
 @import "form";
 @import "gridabout";
+@import "animateform";
 
 header {
     text-align: center;
@@ -118,4 +119,16 @@ main {
 
 aside {
     float: right;
+}
+
+img {
+    opacity: 1;
+}
+
+img:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -webkit-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
 }

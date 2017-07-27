@@ -117,8 +117,10 @@ h3 {
   font: 1.5em "Libre Franklin", sans-serif;
   font-style: italic; }
 
+/* SCSS Function as per rubric requirements */
 p {
-  font: 1em "Nunito", sans-serif;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
   line-height: 1.6em; }
 
 .navigation {
@@ -188,6 +190,7 @@ p {
   width: 210px;
   z-index: 1100; }
 
+/* ANOTHER EXAMPLE OF NESTING AS PER RUBRIC REQUIREMENTS */
 .sticky li {
   list-style-type: none;
   height: 43px;
@@ -215,8 +218,40 @@ footer {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 10; }
+  bottom: 10;
+  font-family: "Nunito", sans-serif; }
 
+.arrow {
+  border: 3px solid #0946b2;
+  border-radius: 4px;
+  margin: 0 auto 5px;
+  padding: 1px;
+  text-align: center;
+  width: 100%;
+  margin-top: 75px; }
+
+.arrow--3 {
+  position: relative; }
+  .arrow--3::after, .arrow--3::before {
+    border: solid transparent;
+    content: " ";
+    display: block;
+    height: 0;
+    position: absolute;
+    pointer-events: none;
+    width: 0;
+    top: 100%; }
+  .arrow--3::after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #0946b2;
+    left: 50%;
+    margin-left: -10px;
+    border-top-color: bottom;
+    left: 50%;
+    margin-left: -14px;
+    border-width: 14px; }
+
+/* Mixin requirement as per rubric */
 /* Basic Styling */
 header {
   text-align: center;
@@ -276,17 +311,17 @@ h4 {
   margin-right: 10px;
   margin-bottom: 20px; }
 
-/* animation = fade in element <-- Replace this animation with another
+/* Transition animation requirement as per rubric */
 img {
-    animation: fading 5s;
-}
+  opacity: 1; }
 
-@keyframes fading {
-    0% {opacity: 0},
-    50% {opacity: 1},
-    100% {opacity: 0}
-}
-*/
+img:hover {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out; }
+
 /* Button Style */
 button {
   color: white;
@@ -332,7 +367,8 @@ button.recent {
 .SignUp__input,
 .SignUp__button {
   height: 2.5rem;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  margin-top: 10px; }
 
 .SignUp__input {
   background: #dcdcdc;
@@ -353,6 +389,7 @@ button.recent {
   height: 100vh;
   flex-direction: column; }
 
+/* EXAMPLE OF NESTING PER RUBRIC REQUIREMENTS */
 form p {
   text-align: center;
   font-weight: bold;

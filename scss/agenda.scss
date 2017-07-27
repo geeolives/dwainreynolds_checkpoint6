@@ -100,3 +100,15 @@ button:active {
     max-width: 420px;
     float: left;
 }
+
+img {
+    opacity: 1;
+}
+
+img:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s ease-out;
+    -moz-transition: opacity 0.2s ease-out;
+    -webkit-transition: opacity 0.2s ease-out;
+    -o-transition: opacity 0.2s ease-out;
+}

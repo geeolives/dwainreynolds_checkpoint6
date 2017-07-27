@@ -31,7 +31,14 @@ h3 {
     font-style: italic;
 }
 
+/* SCSS Function as per rubric requirements */
+
+@function remy($pxsize) {
+    @return ($pxsize/24)+rem;
+}
+
 p {
-    font: 1em $nunito;
+    font-size: remy(24);
+    font-family: $nunito;
     line-height: 1.6em;
 }

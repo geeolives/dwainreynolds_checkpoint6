@@ -16,8 +16,10 @@ h3 {
   font: 1.5em "Libre Franklin", sans-serif;
   font-style: italic; }
 
+/* SCSS Function as per rubric requirements */
 p {
-  font: 1em "Nunito", sans-serif;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
   line-height: 1.6em; }
 
 .navigation {
@@ -87,6 +89,7 @@ p {
   width: 210px;
   z-index: 1100; }
 
+/* ANOTHER EXAMPLE OF NESTING AS PER RUBRIC REQUIREMENTS */
 .sticky li {
   list-style-type: none;
   height: 43px;
@@ -114,7 +117,8 @@ footer {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 10; }
+  bottom: 10;
+  font-family: "Nunito", sans-serif; }
 
 .donate-wrapper {
   background-color: #0040b2;

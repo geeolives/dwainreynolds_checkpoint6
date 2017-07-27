@@ -9,24 +9,27 @@
     z-index: 1100;
 }
 
-.sticky li {
-    list-style-type: none;
+/* ANOTHER EXAMPLE OF NESTING AS PER RUBRIC REQUIREMENTS */
+.sticky {
 
-    height: 43px;
-    padding: 1px;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    cursor: pointer;
-}
+    li {
+        list-style-type: none;
+        height: 43px;
+        padding: 1px;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        cursor: pointer;
+    }
 
-.sticky li:hover {
-    margin-left: -5px;
-}
+    li:hover {
+        margin-left: -5px;
+    }
 
-.sticky li img {
-    float: left;
-    margin: 5px 4px;
-    margin-right: 5px;
+    li img {
+        float: left;
+        margin: 5px 4px;
+        margin-right: 5px;
+    }
 }

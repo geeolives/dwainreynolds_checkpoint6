@@ -1,0 +1,82 @@
+@mixin css-arrow($height: 10px, $border: 2px, $color: white, $border-color: #0946b2, $direction: bottom, $outside: true) {
+    $border-shift: $border;
+
+    @if $border > 0.1px {
+        $border: round($border * 1.41421356);
+    }
+
+    position: relative;
+
+    &::after,
+    &::before {
+        border: solid transparent;
+        content: " ";
+        display: block;
+        height: 0;
+        position: absolute;
+        pointer-events: none;
+        width: 0;
+
+        @if $direction == bottom {
+            @if $outside {
+                top: 100%;
+            }
+            @else {
+                bottom: 0;
+                margin-bottom: -$border-shift;
+            }
+        }
+    }
+
+    &::after {
+        border-color: rgba(255, 255, 255, 0);
+
+        @if $direction == bottom {
+            @if $outside {
+                border-top-color: $color;
+            }
+            @else {
+                border-bottom-color: $color;
+            }
+        }
+
+        @if $direction == top or $direction == bottom {
+            left: 50%;
+            margin-left: -$height;
+        }
+
+        @if $direction == bottom {
+            @if $outside {
+                border-top-color: $border-color;
+            }
+            @else {
+                border-bottom-color: $border-color;
+            }
+        }
+
+        @if $direction == top or $direction == bottom {
+            left: 50%;
+            margin-left: -($height + $border);
+        }
+
+        border-width: $height + $border;
+    }
+}
+
+// Variables
+$border-color: #0946b2;
+$border-size: 3px;
+
+.arrow {
+    border: $border-size solid $border-color;
+    border-radius: 4px;
+    margin: 0 auto 5px;
+    padding: 1px;
+    text-align: center;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.arrow--3 {
+    @include css-arrow(10px, $border-size, $border-color, bottom);
+}
