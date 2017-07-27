@@ -17,7 +17,8 @@ h3 {
   font-style: italic; }
 
 p {
-  font: 1em "Nunito", sans-serif; }
+  font: 1em "Nunito", sans-serif;
+  line-height: 1.6em; }
 
 .navigation {
   list-style: none;
@@ -177,7 +178,7 @@ footer {
   background: #0946b2;
   color: white;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 100px;
   padding: 5px;
   position: absolute;
   right: 0;
