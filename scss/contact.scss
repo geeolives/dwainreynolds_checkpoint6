@@ -83,29 +83,37 @@ textarea {
 }
 
 .send-button {
-    margin-top: 15px;
-    height: 34px;
-    width: 400px;
-    overflow: hidden;
-    transition: all 0.2s ease-in-out;
-    background-color: #0946b2;
+    color: white;
+    background-color: #4fcc6b;
+    margin-bottom: 68px;
+    border-radius: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.06em;
+    -webkit-transition: 320ms;
+    transition: 320ms;
+    font-weight: 900;
+    cursor: pointer;
+    border: solid 1px #82c110;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    float: right;
 }
 
-.button {
-    width: 400px;
-    height: 34px;
-    transition: all 0.2s ease-in-out;
-}
-
-.send-text {
-    display: block;
-    margin-top: 10px;
-    font: 300 14px $nunito;
-    letter-spacing: 2px;
-}
-
-.button:hover {
-    transform: translate3d(-29px);
+.send-button:hover,
+.send-button:focus,
+.send-button:active {
+    background-color: #196cff;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    color: #ffffff;
+    outline: none;
+    border: 0;
 }
 
 /* Begin Right Contact Page */
@@ -118,7 +126,6 @@ textarea {
 /* Location & Phone Section */
 .contact-list {
     list-style-type: none;
-    margin-left: -30px;
     padding-right: 20px;
 }
 
@@ -206,4 +213,8 @@ textarea {
 
 #message {
     margin-left: 10px;
+}
+
+.donate-wrapper {
+    width: 120%;
 }

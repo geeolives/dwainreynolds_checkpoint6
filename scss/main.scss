@@ -1,6 +1,19 @@
 @import "grid";
-@import "responsivehome";
 @import "fonts";
 @import "navigation";
 @import "donate";
 @import "socialmedia";
+@import "footer";
+
+header {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.donate-wrapper {
+    width: 117%;
+    position: relative;
+}
