@@ -417,7 +417,7 @@ button.presskit {
   color: white;
   margin-bottom: 68px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
@@ -447,8 +447,9 @@ button.donate {
   color: white;
   background-color: #4fcc6b;
   margin-bottom: 68px;
+  margin-top: 12px;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
