@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=500, initial-scale=1">
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="scss/main.css">
+    <link rel="stylesheet" type="text/css" href="scss/contact.css">
 
 		<!--Replacement for Bodoni font-->
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
@@ -34,37 +34,77 @@
 		</ul>
 	</nav>
 
-	<aside>
-		<h1>Contact Me</h1>
-
-		<h3>Mailing Address</h3>
-		<p>Dwain C. Reynolds III</p>
-		<p>725 Perch Cove Court</p>
-		<p>Middleville, MI 49333</p>
-
-		<h3>Phone Number</h3>
-		<p><a href="#"></a>616-805-9609</p>
-
-		<h3>Download our Press Kit:</h3>
-		<button type="submit">Press Kit</button>
-	</aside>
-
-	<main>
-		<h2>Thank you so much for reaching out!</h2>
-		<p>We want to hear from you. Please message us here. Campaign staff monitors this email in-box and passes on your feedback to Dwain and the campaign team. While we may not be able to answer each of your emails individually, we value your input.</p>
-
-		<h3>Help us out by making a donation today!</h3>
-	</main>
-
 	<div class="container">
-		<div class="donate-wrapper">
-			<h1>Contribute Today</h1>
-			<div class="donate-box-wrapper"></div>
-			<div class="donate-box">$10</div>
-			<div class="donate-box">$25</div>
-			<div class="donate-box">$50</div>
-			<div class="donate-box">$100</div>
-			<div type="submit" class="btn btn-green">Donate</div>
+		<div class="row">
+
+			<h1>Contact Me</h1>
+
+			<main class="col-12">
+
+				<h2>Thank you so much for reaching out!</h2>
+				<p>We want to hear from you. Please message us here. Campaign staff monitors this email in-box and passes on your feedback to Dwain and the campaign team. While we may not be able to answer each of your emails individually, we value your input.</p>
+
+				<section id="contact">
+
+					<div class="contact-wrapper">
+
+						<!--CONTACT PAGE LEFT-->
+
+						<form class="form-horizontal" role="form" method="post">
+
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+								</div>
+							</div>
+
+							<textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+
+							<button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+								<div class="button"><i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+								</div>
+							</button>
+						</form>
+
+						<!--CONTACT PAGE RIGHT-->
+
+						<div class="direct-contact-container">
+
+							<ul class="contact-list">
+								<li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place"><a href="https://goo.gl/maps/XTGE6rMVW1H2">MIDDLEVILLE | MI</a></span></i></li>
+
+								<li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-616-805-9609" title="Give me a call">1-616-805-9609</a></span></i></li>
+							</ul>
+
+							<hr>
+
+							<h3>Download our Press Kit here:</h3>
+							<button type="submit" class="presskit">Press Kit</button>
+
+						</div>
+					</div>
+
+				</section>
+			</main>
+
+<h3>Help us out by making a donation today!</h3>
+
+	<div class="donate-wrapper">
+		<h1 class="contribute">Contribute Today</h1>
+		<div class="donate-box-wrapper"></div>
+		<div class="donate-box">$10</div>
+		<div class="donate-box">$25</div>
+		<div class="donate-box">$50</div>
+		<div class="donate-box">$100</div>
+		<div type="submit" class="btn btn-green">Donate</div>
+	</div>
+
 </div>
 </div>
 
@@ -81,6 +121,8 @@
 		<p id="footer"><b>Paid for by Dwain Reynolds for Michigan | </b> © 2016 Dwain Reynolds</p>
 	</footer>
 
-    <script src="js/main.js"></script>
+	<script src="https://use.fontawesome.com/a1496b96d0.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 </html>
