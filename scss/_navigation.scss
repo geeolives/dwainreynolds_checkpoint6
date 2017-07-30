@@ -25,7 +25,11 @@
     background: #003ca8;
 }
 
-.active {
+.navigation a:active {
+    background: $secondary-color;
+}
+
+/* .active {
     background-color: $secondary-color;
 }
 
@@ -47,7 +51,7 @@
 
 .active-two {
     background-color: #4fcc6b;
-}
+} */
 
 @media all and (max-width: 1000px) {
     .navigation {
