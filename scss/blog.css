@@ -205,11 +205,12 @@ footer {
   position: absolute;
   right: 0;
   left: 0;
-  bottom: 10;
+  bottom: 100;
   font-family: "Nunito", sans-serif;
   flex: 0 0 auto;
   /* second use of flexbox - flex grow, flex shrink, flex basis */
-  padding: 1em; }
+  padding: 1em;
+  width: 100%; }
 
 .arrow {
   border: 3px solid #0946b2;

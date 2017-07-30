@@ -6,8 +6,9 @@ footer {
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 10;
+    bottom: 100;
     font-family: $nunito;
     flex: 0 0 auto; /* second use of flexbox - flex grow, flex shrink, flex basis */
     padding: 1em;
+    width: 100%;
 }

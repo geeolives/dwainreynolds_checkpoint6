@@ -2,6 +2,7 @@
 .donate-wrapper {
     background-color: #0040b2;
     color: #ffffff;
+    width: 100%;
     padding: 10px;
 }
 
@@ -19,13 +20,13 @@
 
 .donate-box {
     background-color: #196cff;
-    display: inline-block;
+    display: inline;
     color: #ffffff;
     padding: 12px;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 600;
     font-size: 12px;
-    margin: 0 10px;
+    margin: 5px;
     position: relative;
 }
 
@@ -37,7 +38,6 @@
 
 .btn-green {
     font-family: 'Libre Franklin', sans-serif;
-    margin: 0 10px;
     padding: 10px;
     background-color: #4fcc6b;
     text-transform: uppercase;
@@ -65,13 +65,10 @@
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
     color: #ffffff;
-    outline: none;
     border: 0;
 }
 
-.donate-wrapper .btn-green {
+.donate-wrapper,
+.btn-green {
     margin-bottom: 10px;
-    width: 20%;
-    font-size: 14px;
-    align-content: center;
 }
