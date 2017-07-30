@@ -45,19 +45,7 @@ p {
 .navigation a:hover {
   background: #003ca8; }
 
-.active {
-  background-color: #0946b2; }
-
-.active-about {
-  background-color: #0946b2; }
-
-.active-agenda {
-  background-color: #0946b2; }
-
-.active-blog {
-  background-color: #0946b2; }
-
-.active-contact {
+.navigation a:active {
   background-color: #0946b2; }
 
 .active-two {
